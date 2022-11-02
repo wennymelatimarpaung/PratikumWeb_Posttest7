@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="stylepesanan.css">
+    <title>Pizza</title>
+</head>
+
+<body>
+    <header class="head">
+        <h1>Pizza&nbsp;<i class="fas fa-pizza-slice"></i>&nbsp;Wenny</h1>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+            <a href="#pesanan">Pesanan</a>
+            <a href="admin.php">Admin</a>
+            <a><input id="swbtn" class="toggle" type="checkbox" onclick="myFunction()"/></a>
+        </nav>
+        <div class="side-bar">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-user" id="user"></i>
+            <i class="fas fa-bars" id="bars"></i>
+        </div>
+        <form action="#" class="search-bar">
+            <input type="search" name="search" id="1" placeholder="Search Here">
+        </form>
+    </header>
+
+    <!----------------------------------Home Section-----------------------------> 
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="inner-content">
+                <h3>Welcome To Pizza&nbsp;<i class="fas fa-pizza-slice"></i>&nbsp;Wenny</h3>
+                <p>Ungkapin sayang bisa kapan saja dengan Pizza Wenny. Pesan untuk dinikmati bersama orang tersayangmu.</p>
+                <button class="btn">Menu</button>
+            </div>
+            <div class="inner-content-img">
+                <img src="pizza.jpg" alt="img">
+            </div>
+        </div>
+    </section>
+<!---------------------------about section--------------->
+    <div class="AboutMe" id="about">
+        <div>
+            <div class="copy-container">
+            </div>
+            
+            <table>
+                <tr>
+                    <td><img src="wenny.jpg" width="300px"></td>
+                    <td>
+                        <pre class="data">
+                        <p><h1>ABOUT ME</h1></p>
+                        <p>Nama                      : Wenny melati marpaung</p>
+                        <p>NIM                         : 2009106080</p>
+                        <p>Program Studi     : Informatika</p>
+                        <p>Angkatan               : 2020</p>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+        </div>
+<!----------------------menu----------------------->
+<section class="menu" id="menu">
+    <h4>Our Menu</h4>
+    <div class="menu-content">  <div class="in-box">
+        <i class="far fa-heart"></i>
+            <img src="pizza1.jpg" alt="img" class="veg-icon">
+                <div class="star">
+                    <h2>Margherita Sushi Pizza</h2>
+                    <h5>Rp.200.000</h5>
+                </div>
+            </div>
+        </div>
+        <div class="in-box">
+            <i class="far fa-heart"></i>
+            <img src="pizza2.jpg" alt="img" class="veg-icon">
+            <div class="in-content">
+                <div class="star">
+                    <h2>Italian Cuisine Tomato Pizza</h2>
+                    <h5>Rp.175.000</h5>
+                </div>
+            </div>
+        </div>
+        <div class="in-box">
+            <i class="far fa-heart"></i>
+            <img src="pizza3.jpg" alt="img" class="veg-icon">
+            <div class="in-content">
+                <div class="star">
+                    <h2>Pepperoni Pizza</h2>
+                    <h5>Rp.99.000</h5>
+                </div>
+            </div>
+        </div>
+        <div class="in-box">
+            <i class="far fa-heart"></i>
+            <img src="pizza4.jpg" alt="img" class="veg-icon">
+            <div class="in-content">
+                <div class="star">
+                    <h2>Hamburger Calzone Pizza</h2>
+                    <h5>Rp.190.000</h5>
+                </div>
+            </div>
+        </div>
+        <div class="in-box">
+            <i class="far fa-heart"></i>
+            <img src="pizza5.jpg" alt="img" class="veg-icon">
+            <div class="in-content">
+                <div class="star">
+                    <h2>Tomatos Margherita Pizza</h2>
+                    <div class="price">
+                    <h5>Rp.180.000</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+
+<!------------------------------------------Pesanan------------------------------------------------>
+<div class="Pesanan"></div>
+<h1 id="pesanan">Pesan Disini YGY</h1>
+<div class="form-style-3"></div>
+<form action="Pesanan.php" method="post">
+<fieldset><legend>---------------------Pizza Wenny-------------------------</legend>
+  <label for="field1">
+    <h3 span>Nama <span class="required"></span></span><input type="text" class="input-field" name="field1" value="" /></label><br><br></fieldset</h3>
+  <label for="field2">
+    <h3 span>Jumlah Pesanan <span class="required"></span></span><input type="number" class="input-field" name="field2" value="" /></label><br><br></fieldset</h3>
+  <label for="field3"><span>Ukuran</span>
+                <input type="radio" class="input-field" name="field3" value="Besar" /> Besar
+                <input type="radio" class="input-field" name="field3" value="Kecil" /> Kecil
+            </label><br><br>
+            <label for="field4">
+                <h3 span>--Tambahan-- ---Topping---</span><br><br></h3>
+                <input type="checkbox" class="input-field" name="field4" value="Keju" /> Keju <br>
+                <input type="checkbox" class="input-field" name="field4" value="Jamur" /> Jamur <br>
+                <input type="checkbox" class="input-field" name="field4" value="Brokoli" /> Brokoli <br>
+                <input type="checkbox" class="input-field" name="field4" value="Pepperoni" /> Pepperoni <br>
+                <input type="checkbox" class="input-field" name="field4" value="Zaitun Hitam" /> Zaitun Hitam <br>
+            </label>
+</select></label>
+</fieldset>
+  <label for="field5">
+    <h3 span>Keterangan <span class="required"></span></span><textarea name="field5" class="textarea-field"></textarea></label></form<h3>
+  <label><span>&nbsp;</span><input name= "Submit" type="submit" value="Masuk"/></label>
+</fieldset>
+</form>
+</div>
+</body>
+
+<!-------------------------------------------contact Section-------------->
+<footer class="contact" id="contact">
+    <div class="contact-sec">
+        <div class="contact-inner">
+            <div class="contact-inner-col"></div>
+            <div class="contact-inner-col">
+                <h1>Contact US&nbsp;<i class="fas fa-paper-plane"></i></h1>
+                <p>Wenny melati marpaung, WA 082352290303</p>
+                <form action="#" id="" method="get">
+                    <input type="text" name="name" id=" " placeholder="Please Enter Your Name" required>
+                    <input type="email" name="name" id=" " placeholder="Please Enter Your Name" required>
+                    <input type="text" name="name" id=" " placeholder="Please Enter Your Name" required>
+                    <textarea name="" id="" cols="10" rows="8"></textarea>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+</footer>
+
+<!-------------------------------java script ------------->
+<script src="jquery.js"></script>
+<script src="javascripst.js"></script>
+</html>
